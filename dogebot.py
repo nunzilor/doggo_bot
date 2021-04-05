@@ -23,9 +23,9 @@ def bop(update, context):
     context.bot.send_photo(chat_id=chat_id, photo=url)
 
 def main():
-    updater = Updater('1671890507:AAEKh87AQaAZnEhou8g7b_rS34BnelkrzQo', use_context=True)
+    updater = Updater('il tuo token', use_context=True)
     dp = updater.dispatcher
-    dp.add_handler(CommandHandler('cane',bop))
+    dp.add_handler(CommandHandler('il tuo comando',bop))
     updater.start_polling()
     updater.idle()
 
